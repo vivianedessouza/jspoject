@@ -17,6 +17,7 @@
   </head>
 
   <body>
+    <!-- Header section -->
     <header class="white-text">
       <div id="nav_bar">
         <h1 class="logo">hub<br />preta's<br />in tech.</h1>
@@ -70,6 +71,7 @@
       </div>
     </header>
     <main>
+      <!-- About section -->
       <section id="about">
         <div class="grid">
           <div class="--main-image">
@@ -119,6 +121,7 @@
           </div>
         </div>
       </section>
+      <!-- Programs section  -->
       <section id="programs">
         <div class="grid">
           <div class="img-hand">
@@ -140,9 +143,7 @@
               color="#cf8786"
               font-weight="300"
             />
-
             <p>Os nossos programas estão centrados em quatro pilares:</p>
-
             <div class="text-programas">
               <div class="programs-icons">
                 <a><i class="ion-chevron-down"></i></a>
@@ -204,6 +205,7 @@
           </div>
         </div>
       </section>
+      <!-- Get involved section -->
       <section id="getinvolved">
         <h1>Como posso envolver-me?</h1>
         <hr
@@ -224,7 +226,16 @@
               receber informações sobre os pacotes de patrocínio
               disponíveis.Contamos com o seu apoio!</P
             >
-            <div><a href="#" class="btn">Deixe a sua mensagem</a></div>
+            <div><a class="btn-mensagem">Deixe a sua mensagem</a></div>
+            <div class="form-popup" id="myForm">
+                <form action="/action_page.php" class="form-container">          
+                  <label for="email"><b>Email</b></label>
+                  <input type="text" placeholder="Enter Email" name="email" required>
+                  <label for="psw"><b>Mensagem</b></label>
+                  <input type="password" placeholder="Enter Message" name="psw" required>
+                  <button type="submit" class="btn-submit">Enviar</button>
+                  <button type="button" class="btn cancel" onclick="closeForm()">Fechar</button>
+                </form>
           </article>
           <article>
             <h3>Mentor</h3>
@@ -236,7 +247,16 @@
               mas deseja ajudar, essa pode ser uma boa maneira de apoiar o
               projecto.</P
             >
-            <div><a href="#" class="btn">Deixe a sua mensagem</a></div>
+            <div><a class="btn-mensagem">Deixe a sua mensagem</a></div>
+            <div class="form-popup" id="myForm">
+                <form action="/action_page.php" class="form-container">          
+                  <label for="email"><b>Email</b></label>
+                  <input type="text" placeholder="Enter Email" name="email" required>
+                  <label for="psw"><b>Mensagem</b></label>
+                  <input type="password" placeholder="Enter Message" name="psw" required>
+                  <button type="submit" class="btn-submit">Enviar</button>
+                  <button type="button" class="btn cancel" onclick="closeForm()">Fechar</button>
+                </form>
           </article>
           <article>
             <h3>Voluntário</h3>
@@ -247,10 +267,20 @@
               pelas quais você pode apoiar: Suporte nas formações técnicas,
               Suporte social, Suporte nas sensibilizações e outros.</P
             >
-            <div><a href="#" class="btn">Deixe a sua mensagem</a></div>
+            <div><a class="btn-mensagem">Deixe a sua mensagem</a></div>
+            <div class="form-popup" id="myForm">
+                <form action="/action_page.php" class="form-container">          
+                  <label for="email"><b>Email</b></label>
+                  <input type="text" placeholder="Enter Email" name="email" required>
+                  <label for="psw"><b>Mensagem</b></label>
+                  <input type="password" placeholder="Enter Message" name="psw" required>
+                  <button type="submit" class="btn-submit">Enviar</button>
+                  <button type="button" class="btn cancel" onclick="closeForm()">Fechar</button>
+                </form>
           </article>
         </div>
       </section>
+      <!-- Contact section -->
       <section id="contact">
         <div class="grid">
           <div class="text white-text">
@@ -306,6 +336,7 @@
         </div>
       </section>
       <section>
+        <!-- footer section -->
         <footer><h3>Copyright Oficial 2018 ©</h3></footer>
       </section>
     </main>
@@ -321,6 +352,5 @@
     <script type="text/javascript" src="/js/about_thumbs.js"></script>
     <script type="text/javascript" src="/js/image_zoom_effect.js"></script>
     <script type="text/javascript" src="/js/marker_map_handler.js"></script>
-
   </body>
 </html>
