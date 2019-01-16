@@ -488,7 +488,7 @@ article h3 {
 /* ----- contact ----- */
 
 section #contact {
-  background-color: #6f7b87;
+  background-color: #6f7b87 !important;
   padding: var(--spacer-2x);
 }
 #contact .grid {
