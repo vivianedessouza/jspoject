@@ -12,7 +12,7 @@ $("#marker1").mouseleave(function() {
 
 // Marker 2 - São Francisco
 $("#marker2").mouseover(function() {
-  var message = "Preta Lab - São Francisco";
+  var message = "Black Girls Code - São Francisco";
   var id = "marker2-box";
   showBalloon(message, id);
 });
@@ -24,7 +24,7 @@ $("#marker2").mouseleave(function() {
 
 // Marker 3 - Seattle
 $("#marker3").mouseover(function() {
-  var message = "Preta Lab - Seattle";
+  var message = "Black Tech Women - Seattle";
   var id = "marker3-box";
   showBalloon(message, id);
 });
