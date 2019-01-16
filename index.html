@@ -226,16 +226,38 @@
               receber informações sobre os pacotes de patrocínio
               disponíveis.Contamos com o seu apoio!</P
             >
-            <div><a class="btn-mensagem">Deixe a sua mensagem</a></div>
-            <div class="form-popup" id="myForm">
-                <form action="/action_page.php" class="form-container">          
-                  <label for="email"><b>Email</b></label>
-                  <input type="text" placeholder="Enter Email" name="email" required>
-                  <label for="psw"><b>Mensagem</b></label>
-                  <input type="password" placeholder="Enter Message" name="psw" required>
-                  <button type="submit" class="btn-submit">Enviar</button>
-                  <button type="button" class="btn cancel" onclick="closeForm()">Fechar</button>
-                </form>
+            <div>
+              <a class="btn-mensagem" onclick="openForm('myForm1')"
+                >Deixe a sua mensagem</a
+              >
+            </div>
+
+            <div class="form-popup" id="myForm1">
+              <form action="/action_page.php" class="form-container">
+                <label for="email"><b>Email</b></label>
+                <input
+                  type="text"
+                  placeholder="Enter Email"
+                  name="email"
+                  required
+                />
+                <label for="psw"><b>Mensagem</b></label>
+                <input
+                  type="password"
+                  placeholder="Enter Message"
+                  name="psw"
+                  required
+                />
+                <button type="submit" class="btn-submit">Enviar</button>
+                <button
+                  type="button"
+                  class="btn cancel"
+                  onclick="closeForm('myForm1')"
+                >
+                  Fechar
+                </button>
+              </form>
+            </div>
           </article>
           <article>
             <h3>Mentor</h3>
@@ -247,16 +269,33 @@
               mas deseja ajudar, essa pode ser uma boa maneira de apoiar o
               projecto.</P
             >
-            <div><a class="btn-mensagem">Deixe a sua mensagem</a></div>
-            <div class="form-popup" id="myForm">
-                <form action="/action_page.php" class="form-container">          
-                  <label for="email"><b>Email</b></label>
-                  <input type="text" placeholder="Enter Email" name="email" required>
-                  <label for="psw"><b>Mensagem</b></label>
-                  <input type="password" placeholder="Enter Message" name="psw" required>
-                  <button type="submit" class="btn-submit">Enviar</button>
-                  <button type="button" class="btn cancel" onclick="closeForm()">Fechar</button>
-                </form>
+            <div>
+              <a class="btn-mensagem" onclick="openForm('myForm2')"
+                >Deixe a sua mensagem</a
+              >
+            </div>
+            <div class="form-popup" id="myForm2">
+              <form action="/action_page.php" class="form-container">
+                <label for="email"><b>Email</b></label>
+                <input
+                  type="text"
+                  placeholder="Enter Email"
+                  name="email"
+                  required
+                />
+                <label for="psw"><b>Mensagem</b></label>
+                <input
+                  type="password"
+                  placeholder="Enter Message"
+                  name="psw"
+                  required
+                />
+                <button type="submit" class="btn-submit">Enviar</button>
+                <button type="button" class="btn cancel" onclick="closeForm('myForm2')">
+                  Fechar
+                </button>
+              </form>
+            </div>
           </article>
           <article>
             <h3>Voluntário</h3>
@@ -267,16 +306,33 @@
               pelas quais você pode apoiar: Suporte nas formações técnicas,
               Suporte social, Suporte nas sensibilizações e outros.</P
             >
-            <div><a class="btn-mensagem">Deixe a sua mensagem</a></div>
-            <div class="form-popup" id="myForm">
-                <form action="/action_page.php" class="form-container">          
-                  <label for="email"><b>Email</b></label>
-                  <input type="text" placeholder="Enter Email" name="email" required>
-                  <label for="psw"><b>Mensagem</b></label>
-                  <input type="password" placeholder="Enter Message" name="psw" required>
-                  <button type="submit" class="btn-submit">Enviar</button>
-                  <button type="button" class="btn cancel" onclick="closeForm()">Fechar</button>
-                </form>
+            <div>
+              <a class="btn-mensagem" onclick="openForm('myForm3')"
+                >Deixe a sua mensagem</a
+              >
+            </div>
+            <div class="form-popup" id="myForm3">
+              <form action="/action_page.php" class="form-container">
+                <label for="email"><b>Email</b></label>
+                <input
+                  type="text"
+                  placeholder="Enter Email"
+                  name="email"
+                  required
+                />
+                <label for="psw"><b>Mensagem</b></label>
+                <input
+                  type="password"
+                  placeholder="Enter Message"
+                  name="psw"
+                  required
+                />
+                <button type="submit" class="btn-submit">Enviar</button>
+                <button type="button" class="btn cancel" onclick="closeForm('myForm3')">
+                  Fechar
+                </button>
+              </form>
+            </div>
           </article>
         </div>
       </section>
@@ -352,5 +408,6 @@
     <script type="text/javascript" src="/js/about_thumbs.js"></script>
     <script type="text/javascript" src="/js/image_zoom_effect.js"></script>
     <script type="text/javascript" src="/js/marker_map_handler.js"></script>
+    <script type="text/javascript" src="/js/form_handler.js"></script>
   </body>
 </html>
