@@ -343,7 +343,7 @@ hr:hover {
   height: 100%;
 }
 
-/* ----- get involved ----- */
+/* ----- Get involved ----- */
 
 #getinvolved {
   background: #fff;
@@ -385,7 +385,7 @@ article h3 {
   letter-spacing: 2;
 }
 
-#getinvolved .btn {
+#getinvolved .btn-mensagem {
   border: 3px solid #cf8786;
   width: 200px;
   padding: 20px;
@@ -393,7 +393,7 @@ article h3 {
   font-size: 15px;
 }
 
-#getinvolved .btn:hover {
+#getinvolved .btn-mensagem:hover {
   border: 3px solid #a9a9a9;
   color: #a9a9a9;
 }
@@ -426,10 +426,66 @@ article h3 {
   padding: 0;
 }
 
+/*POPUP*/
+
+.form-popup {
+  display: hidden;
+  position: relative;
+  bottom: 40px;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+.form-container .btn-submit {
+  background-color: #cf8786;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+.form-container .cancel {
+  background-color: #cf8786;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+.form-container .btn-submit:hover, .btn-mensagem:hover {
+  opacity: 1;
+}
+​
 /* ----- contact ----- */
 
-#contact {
-  background: #6f7b87;
+section #contact {
+  background-color: #6f7b87;
   padding: var(--spacer-2x);
 }
 #contact .grid {
