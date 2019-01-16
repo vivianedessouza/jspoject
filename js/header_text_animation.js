@@ -1,16 +1,16 @@
-let elements; // Array dos elementos do Header.
+var elements; // Array dos elementos do Header.
 
 // Esconder todos os textos.
 $(function() {
   elements = document.querySelectorAll("#header-texts div");
 
-  for (let i = 0; i < elements.length; i++) {
+  for (var i = 0; i < elements.length; i++) {
     elements[i].style.display = "none";
   }
   elements[0].style.display = "block";
 });
 
-let counter = 0;
+var counter = 0;
 
 // Cria um intervalo entre esconder e mostrar.
 setInterval(function() {

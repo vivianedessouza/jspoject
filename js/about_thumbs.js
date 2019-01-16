@@ -1,15 +1,15 @@
 //SOBRE - THUMBS
 
 // Guardar num array todos os elementos da classe
-const thumbs = document.getElementsByClassName("thumb");
+var thumbs = document.getElementsByClassName("thumb");
 
 // Seleciona o primeiro thumb
 selectElement(thumbs[0]);
 
-let selectedThumb = thumbs[0];
+var selectedThumb = thumbs[0];
 
 // Ciclos que dá tantas voltas quanto ao número de elementos do array
-for (let i = 0; i < thumbs.length; i++) {
+for (var i = 0; i < thumbs.length; i++) {
   // add um event listener a cada um dos thumbs
   $(thumbs[i]).click(function() {
     // Troca a imagem principal

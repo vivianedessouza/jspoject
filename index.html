@@ -18,15 +18,17 @@
 
   <body>
     <header class="white-text">
-      <h1 class="logo">hub<br />preta's<br />in tech.</h1>
-      <nav>
-        <ul>
-          <li><a class="active" href="#about">sobre</a></li>
-          <li><a href="#programs">programas</a></li>
-          <li><a href="#getinvolved">envolver-se</a></li>
-          <li><a href="#contact">contacto</a></li>
-        </ul>
-      </nav>
+      <div id="nav_bar">
+        <h1 class="logo">hub<br />preta's<br />in tech.</h1>
+        <nav id="nav-elements">
+          <ul>
+            <li><a class="active" href="#about">sobre</a></li>
+            <li><a href="#programs">programas</a></li>
+            <li><a href="#getinvolved">envolver-se</a></li>
+            <li><a href="#contact">contacto</a></li>
+          </ul>
+        </nav>
+      </div>
       <div id="header-texts">
         <div class="tlg">
           <h1 class="statement">
@@ -122,9 +124,8 @@
           <div class="img-hand">
             <img
               id="python_img"
-              src="/img/adult-book-series-books-1181672.jpg"
-              width="100%"
-              height="600"
+              src="/img/small-python-book.jpeg"
+              data-zoom-image="/img/big-python-book.png"
             />
           </div>
           <div class="programs-group">
@@ -217,10 +218,11 @@
             <h3>Investidor</h3>
             <img class="get_img" src="/img/sponsor.jpg" />
             <P
-              >Se a sua empresa gostaria de apoiar o Hub Preta's in Tech e
+              >Se a sua empresa gostava de apoiar o Hub Preta's in Tech e
               patrocinar o crescimento das mulheres negras na comunidade de
               tecnologia, insira as suas informações de contato abaixo para
-              receber informações sobre os pacotes de patrocínio disponíveis.</P
+              receber informações sobre os pacotes de patrocínio
+              disponíveis.Contamos com o seu apoio!</P
             >
             <div><a href="#" class="btn">Deixe a sua mensagem</a></div>
           </article>
@@ -230,8 +232,9 @@
             <P>
               Além de nossos excelentes programas como eventos, palestras,
               formações, muitas vezes, temos solicitações únicas para eventos
-              que precisam de palestrantes e mentores. Se você tem pouco tempo,
-              essa pode ser uma boa maneira de apoiar o projecto.</P
+              que precisam de palestrantes e mentores. Caso possua pouco tempo,
+              mas deseja ajudar, essa pode ser uma boa maneira de apoiar o
+              projecto.</P
             >
             <div><a href="#" class="btn">Deixe a sua mensagem</a></div>
           </article>
@@ -266,7 +269,38 @@
           <div>
             <section class="map">
               <h3>Conheça outros projectos!</h3>
-              <img src="/img/map2-copyright.png" />
+              <div id="map-container">
+                <img src="/img/map2-copyright.png" id="map-img" />
+                <div class="markers">
+                  <!-- Brasil -->
+                  <div id="marker1" class="marker">
+                    <img
+                      src="/img/marker.png"
+                      id="marker1"
+                      style="height: 30px"
+                    />
+                  </div>
+
+                  <!-- São Francisco -->
+                  <div id="marker2" class="marker">
+                    <img
+                      src="/img/marker.png"
+                      id="marker2"
+                      style="height: 30px"
+                    />
+                  </div>
+
+                  <!-- Seatle -->
+                  <div id="marker3" class="marker">
+                    <img
+                      src="/img/marker.png"
+                      id="marker2"
+                      style="height: 30px"
+                    />
+                  </div>
+                  <div id="float-box"></div>
+                </div>
+              </div>
             </section>
           </div>
         </div>
@@ -275,11 +309,18 @@
         <footer><h3>Copyright Oficial 2018 ©</h3></footer>
       </section>
     </main>
+    <!-- Libs externas -->
+    <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="/js/libs/jquery.elevatezoom.js"></script>
+
     <!-- Inclusão de ficheiro javascript -->
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/scroll_functions.js"></script>
     <script type="text/javascript" src="/js/header_text_animation.js"></script>
     <script type="text/javascript" src="/js/programs_toggle.js"></script>
     <script type="text/javascript" src="/js/get_involved.js"></script>
     <script type="text/javascript" src="/js/about_thumbs.js"></script>
+    <script type="text/javascript" src="/js/image_zoom_effect.js"></script>
+    <script type="text/javascript" src="/js/marker_map_handler.js"></script>
+
   </body>
 </html>

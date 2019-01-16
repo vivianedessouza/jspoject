@@ -64,7 +64,6 @@ h2 {
   font-size: var(--base-font-size);
   letter-spacing: 4px;
   color: #fff;
-  /* text-transform: uppercase;*/
   font-weight: 400;
   margin-bottom: var(--spacer);
 }
@@ -99,11 +98,23 @@ header {
 
 header .logo {
   position: absolute;
-  top: var(--spacer-2x);
+  top: 0;
   font-size: var(--base-font-size);
-  border: 1px solid #ffa897;
+  border: 2px solid #fff;
   padding: 15px;
+  margin-top: 15px;
   letter-spacing: 1.5px;
+}
+
+.logo-scrolled {
+  position: absolute;
+  top: 0;
+  border: 2px solid #fff;
+  padding: 7px;
+  margin-top: 8px;
+  margin-left: 60px;
+  letter-spacing: 0.5px;
+  font-size: small;
 }
 
 header .statement {
@@ -132,10 +143,16 @@ header .statement {
 }
 /* ----- Nav ----- */
 
+#nav-elements {
+  top: 0;
+  margin-top: 40px;
+}
+
 nav {
   position: absolute;
   top: calc(var(--spacer) * 2);
   right: calc(var(--spacer) * 5);
+  margin-top: 0.1px;
 }
 
 nav ul {
@@ -157,12 +174,35 @@ nav ul li a {
 
 nav ul li a:hover,
 nav ul li a.active {
-  border-bottom: 1px solid #ffa897;
+  border-bottom: 1px solid #fff;
 }
 
 span {
   color: #ffa897;
   font-weight: 700;
+}
+
+#nav_bar {
+  width: 100%;
+  height: 110px;
+  top: 0;
+  left: 0;
+  padding: 2rem;
+  background-color: #00000000;
+  opacity: 1;
+  filter: Alpha(opacity=50);
+}
+
+.nav-bar-scrolled {
+  height: 80px !important;
+  position: fixed;
+  background-color: #ffa897 !important;
+  transition: 0.2s;
+  z-index: 1;
+  top: 0 !important;
+  right: calc(var(--spacer) * 5);
+  float: right;
+  font-size: small;
 }
 
 /* ----- Main  ----- */
@@ -298,6 +338,11 @@ hr:hover {
   margin-bottom: var(--spacer);
 }
 
+#python_img {
+  width: 100%;
+  height: 100%;
+}
+
 /* ----- get involved ----- */
 
 #getinvolved {
@@ -348,23 +393,18 @@ article h3 {
   font-size: 15px;
 }
 
-#getinvolved .btn a {
-  text-transform: uppercase;
-  text-decoration: italic;
-}
-
 #getinvolved .btn:hover {
-  border: 3px solid #444343;
-  color: #444343;
+  border: 3px solid #a9a9a9;
+  color: #a9a9a9;
 }
 
-.get_imgs {
+.get_img {
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   -ms-transition: all 0.3s ease-in-out;
   z-index: -1;
-  margin: 20px;
+  margin: 20px 0 20px 0;
 }
 
 .transition {
@@ -433,6 +473,82 @@ article h3 {
   display: inline-block;
   padding-bottom: 4px;
   border-bottom: 1px solid #fff;
+}
+
+/* MAPA */
+
+#map-container {
+  display: inline-block;
+  position: relative;
+}
+
+#map-container .map-img {
+  height: auto;
+  max-width: 100%;
+  width: auto;
+}
+
+#map-container > .markers {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+#map-container > .markers > .marker {
+  position: absolute;
+}
+
+#map-container > .markers > .marker > .marker-content {
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -o-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+/* Brasil */
+#marker1 {
+  left: 30%;
+  top: 63%;
+}
+
+/* São Francisco */
+#marker2 {
+  left: 11%;
+  top: 27%;
+}
+
+/* Seattle */
+#marker3 {
+  left: 10%;
+  top: 16%;
+}
+
+.float-box {
+  width: 30%;
+  background-color: #ffa897;
+  color: #fff;
+  opacity: 0.6;
+  border: 1px solid #fff;
+  text-align: center;
+  padding: 6px;
+}
+
+.marker1-box {
+  margin-top: 140px;
+  margin-left: 90px;
+}
+
+.marker2-box {
+  margin-top: 35px;
+  margin-left: 12px;
+}
+
+.marker3-box {
+  margin-top: 0px;
+  margin-left: 0px;
 }
 
 footer h3 {
