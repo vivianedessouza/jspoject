@@ -13,7 +13,7 @@ for (var i = 0; i < items.length; i++) {
   items[i].addEventListener("click", function() {
     var arrayPosition = this.id;
     var elementState = states[arrayPosition]; // Obtem o estado atual do elemento selecionado do Array.
-    var elementSelected = this.querySelector("p"); // Get element P inside the clicked DIV.
+    var elementSelected = this.querySelector("p"); // Get element P dentro da div clicada.
     var chevronIcon = this.querySelector("i"); // Get icon
 
     if (elementState) {
@@ -24,6 +24,6 @@ for (var i = 0; i < items.length; i++) {
       chevronIcon.style.transform = "rotate(180deg)";
     }
 
-    states[arrayPosition] = !elementState; // Update the array with the new value state.
+    states[arrayPosition] = !elementState; // Atualiza o Array com o novo valor.
   });
 }

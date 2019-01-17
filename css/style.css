@@ -391,6 +391,7 @@ article h3 {
   padding: 20px;
   color: #cf8786;
   font-size: 15px;
+  cursor: pointer;
 }
 
 #getinvolved .btn-mensagem:hover {
@@ -426,6 +427,10 @@ article h3 {
   padding: 0;
 }
 
+#getinvolved article .p-bottom-2 {
+  padding-bottom: 16px;
+}
+
 /*POPUP*/
 
 .form-popup {
@@ -434,6 +439,8 @@ article h3 {
   bottom: 40px;
   right: 15px;
   border: 3px solid #f1f1f1;
+  background-color: #e1e1e1;
+  padding: 10px;
 }
 
 #get_involved .form-container {
@@ -586,7 +593,6 @@ article h3 {
   width: 30%;
   background-color: #ffa897;
   color: #fff;
-  opacity: 0.6;
   border: 1px solid #fff;
   text-align: center;
   padding: 6px;
@@ -623,68 +629,118 @@ footer h3 {
   :root {
     --spacer: 20px;
   }
-/* ----- header ----- */
+  /* ----- header ----- */
 
-nav ul {
-  display: none;
-  list-style-type: none;
-}
+  header .statement {
+    font-size: var(--spacer);
+  }
 
-header .logo {
-  position: absolute;
-  align-items: center;
-  top: 0;
-  font-size: var(--base-font-size);
-  border: 2px solid #fff;
-  padding: 15px;
-  margin-top: 15px;
-  letter-spacing: 1.5px;
-}
+  /* ----- about ----- */
 
-header .statement{
-  font-size:var(--spacer);
-}
+  .grid {
+    grid-template-columns: 1fr;
+  }
 
-/* ----- about ----- */
+  #main-image {
+    width: 99%;
+  }
 
-.grid {
-  grid-template-columns: 1fr;
-}
+  .img-grid {
+    width: 100%;
+  }
 
-#main-image{
-  width: 70%;
-}
+  .text1 h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
 
-.img-grid{
-  width: 70%;
-}
+  .text1 p {
+    font-size: 14px;
+    width: 100%;
+  }
 
-.text1 h1{
-  font-size:30px;
-  margin-bottom: 10px;
-}
-
-.text1 p{
-  font-size: 14px;
-  width: 70%;
-}
-
-.btn1{
+  .btn1 {
     width: 100px;
     padding: 10px;
     font-size: 10px;
     margin: 20px;
-}
+  }
 
-#about hr {
-  display: none;
-}
+  #about hr {
+    display: none;
+  }
 
-/* ----- programs ----- */
+  /* ----- programs ----- */
 
-#python_img {
-  width: 50%;
-  align-items: center;
-  
-}
+  #python_img {
+    width: 90%;
+    height: 500px;
+  }
+
+  .programs-group h1 {
+    font-size: 30px;
+  }
+
+  #programs h3 {
+    font-size: 14px;
+  }
+
+  .btn-ask {
+    width: 100px;
+    padding: 10px;
+    font-size: 10px;
+    margin: 20px;
+  }
+
+  .text-programas hr {
+    width: 99%;
+    text-align: right;
+  }
+  /* ----- get envolved ----- */
+
+  #getinvolved h1 {
+    font-size: 30px;
+  }
+  #getinvolved .btn-mensagem {
+    width: 100px;
+    padding: 10px;
+    font-size: 10px;
+    margin: 20px;
+  }
+
+  #getinvolved article h3 {
+    font-size: var(--spacer);
+  }
+
+  #getinvolved article .p-bottom-1 {
+    padding-bottom: 53px;
+  }
+
+  #getinvolved article .p-bottom-2 {
+    padding-bottom: 72px;
+  }
+  /* ----- contact ----- */
+
+  #contact-section h1 {
+    font-size: 30px;
+  }
+
+  #contact-section h3 {
+    font-size: var(--spacer);
+  }
+
+  #contact-section p {
+    font-size: 14px;
+  }
+
+  #contact-section #btn-sign {
+    width: 100px;
+    padding: 10px;
+    font-size: 10px;
+    margin: 20px;
+  }
+
+  footer h3 {
+    font-size: 14px;
+  }
 }
