@@ -622,60 +622,68 @@ footer h3 {
   :root {
     --spacer: 20px;
   }
+/* ----- header ----- */
 
-  .grid {
-    grid-template-columns: 1fr;
-  }
+nav ul {
+  display: none;
+  list-style-type: none;
+}
 
-  .img-grid,
-  .img-item {
-    grid-template-columns: 1fr;
-  }
+header .logo {
+  position: absolute;
+  align-items: center;
+  top: 0;
+  font-size: var(--base-font-size);
+  border: 2px solid #fff;
+  padding: 15px;
+  margin-top: 15px;
+  letter-spacing: 1.5px;
+}
 
-  #about .img-grid {
-    display: none;
-  }
+header .statement{
+  font-size:var(--spacer);
+}
 
-  .text1 h1 {
-    font-size: var(--spacer);
-  }
+/* ----- about ----- */
 
-  #about .text1 p {
-    font-size: var(--spacer);
-  }
+.grid {
+  grid-template-columns: 1fr;
+}
 
-  .programs-group h1 {
-    font-size: var(--spacer);
-  }
+#main-image{
+  width: 70%;
+}
 
-  .programs-group p {
-    width: 80%;
-    padding: 20px 0 20px 0;
-    font-size: var(--spacer);
-  }
+.img-grid{
+  width: 70%;
+}
 
-  .text-programas h3 {
-    font-size: var(--spacer);
-  }
+.text1 h1{
+  font-size:30px;
+  margin-bottom: 10px;
+}
 
-  .text-programas hr {
-    text-align: left;
-    width: 300px;
-  }
+.text1 p{
+  font-size: 14px;
+  width: 70%;
+}
 
-  #nav-elements,
-  .social-media,
-  #nav_bar {
-    display: none;
-  }
-  .white-text {
-    width: 100%;
-  }
-  .statement {
-    font-size: var(--spacer);
-  }
+.btn1{
+    width: 100px;
+    padding: 10px;
+    font-size: 10px;
+    margin: 20px;
+}
 
-  #about {
-    width: 100%;
-  }
+#about hr {
+  display: none;
+}
+
+/* ----- programs ----- */
+
+#python_img {
+  width: 50%;
+  align-items: center;
+  
+}
 }
