@@ -13,15 +13,3 @@ $(document).ready(function() {
     }
   );
 });
-
-//POPUP
-
-$(".btn-mensagem").click(function openForm() {
-  document.getElementById("#myForm").style.display = "block";
-});
-
-
-$(".cancel").click(function closeForm() {
-  document.getElementById("#myForm").style.display = "none";
-});
-console.log(".cancel");

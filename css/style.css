@@ -429,7 +429,7 @@ article h3 {
 /*POPUP*/
 
 .form-popup {
-  display: hidden;
+  display: none;
   position: relative;
   bottom: 40px;
   right: 15px;
