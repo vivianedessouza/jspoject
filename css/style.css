@@ -487,9 +487,10 @@ article h3 {
 /* ----- contact ----- */
 
 #contact-section {
-  background: #000;
+  background: #6f7b87;
   padding: var(--spacer-2x);
 }
+
 #contact-section .grid {
   grid-template-columns: 1fr 1fr;
 }
